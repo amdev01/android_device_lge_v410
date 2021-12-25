@@ -21,11 +21,11 @@ $(call inherit-product-if-exists, vendor/lge/v410/v410-vendor.mk)
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/vendor/etc/media_profiles.xml
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
+    $(LOCAL_PATH)/configs/thermal-engine-8226.conf:system/vendor/etc/thermal-engine-8226.conf
 
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)
