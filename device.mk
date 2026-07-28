@@ -27,5 +27,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
 
+# Telephony (GSM/LTE only; no CDMA — AT&T V410)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)
