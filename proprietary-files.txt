@@ -61,6 +61,8 @@ lib/libmmcamera_hi544.so
 vendor/lib/libmmcamera_hi544_eeprom.so
 
 # Radio (stock KitKat QCRIL/QMI — de-commonized from D850 Lollipop kang)
+# Exception: bin/rmt_storage must be D850/LP (Nougat-safe). Stock KK needs ioprio_set
+# and abort-loops on 7.1 bionic (bootloop-20261113).
 bin/irsc_util
 bin/netmgrd
 bin/qmiproxy
