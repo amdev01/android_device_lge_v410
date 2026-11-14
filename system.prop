@@ -11,3 +11,7 @@ ro.build.target_operator=ATT
 ro.build.target_country=US
 persist.radio.msgtunnel.start=false
 keyguard.no_require_sim=true
+# VoLTE test path (framework IMS avail override). Carrier TBV on AT&T/Cricket.
+persist.dbg.volte_avail_ovr=1
+persist.radio.calls.on.ims=true
+persist.radio.volte_enable_override=1

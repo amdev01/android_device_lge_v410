@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
 
 # Telephony (GSM/LTE only; no CDMA — AT&T V410)
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    device/lge/v4xx-common/rootdir/etc/v4xx-sim-ssr.sh:system/bin/v4xx-sim-ssr
 
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)

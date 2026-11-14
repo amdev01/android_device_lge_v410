@@ -114,8 +114,8 @@
         <item>lte:4094,87380,2560000,4096,16384,1220608</item>
     </string-array>
 
-    <!-- Is the device capable of hot swapping an UICC Card -->
-    <bool name="config_hotswapCapable">true</bool>
+    <!-- No UIM card-detect GPIO; hot-insert needs modem SSR (v4xx-sim-ssr). -->
+    <bool name="config_hotswapCapable">false</bool>
 
     <!-- Override v4xx-common (Wi‑Fi tablets set false). LTE SKUs need PSTN
          PhoneAccount registration for dialer → RIL DIAL. -->
