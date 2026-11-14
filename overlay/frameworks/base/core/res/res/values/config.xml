@@ -117,4 +117,8 @@
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
+    <!-- Override v4xx-common (Wi‑Fi tablets set false). LTE SKUs need PSTN
+         PhoneAccount registration for dialer → RIL DIAL. -->
+    <bool name="config_voice_capable">true</bool>
+
 </resources>
