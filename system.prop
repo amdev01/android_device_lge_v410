@@ -14,5 +14,8 @@ keyguard.no_require_sim=true
 # CS voice first: do NOT force IMS. Without ImsService, IMS overrides break
 # MO ACTIVE/DL and MT ring while CSFB still moves the radio. VoLTE later.
 persist.radio.calls.on.ims=false
-# Start QTI IMS daemons (init.v4xx-ims.rc); keep volte overlay false until bind.
-persist.radio.ims_daemon=1
+# Keep QTI IMS daemons/APK off until CS GET_CURRENT_CALLS reaches ACTIVE
+# (see v490 HITL 2026-11-15 stuck-DIALING / HANGUP GENERIC_FAILURE).
+persist.radio.ims_daemon=0
+persist.radio.jbims=0
+persist.radio.is_voip_enabled=false
