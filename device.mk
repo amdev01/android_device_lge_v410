@@ -33,5 +33,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     device/lge/v4xx-common/rootdir/etc/v4xx-sim-ssr.sh:system/bin/v4xx-sim-ssr
 
+PRODUCT_PACKAGES += SimRecover
+
+# QTI IMS blobs (VoLTE gated off in overlay until ImsService binds)
+$(call inherit-product-if-exists, vendor/lge/v4xx-common/v4xx-ims.mk)
+
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)
